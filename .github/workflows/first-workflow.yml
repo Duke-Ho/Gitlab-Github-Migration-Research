@@ -1,0 +1,15 @@
+# name key - to define the name of this workflow
+# on key - What events will triggers this workflow - the events is predefined
+# jobs key - work this workflow can do
+name: Example Workflow
+on: workflow_dispatch
+jobs:
+  some-jobs:
+    #jobs need a runner? what runner is it running on
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings
+        run: echo "Hello World!"
+      - name: Bye
+        run: echo "Bye!"
+    
